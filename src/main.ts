@@ -133,6 +133,10 @@ async function getAIResponse(prompt: string): Promise<Array<{
       messages: [
         {
           role: "system",
+          content: "당신은 훌륭한 GitHub Pull Request 코드 리뷰어입니다. 모든 리뷰는 반드시 한국어로 작성하세요. 긍정적인 코멘트 없이 개선할 점만 지적하세요.",
+        },
+        {
+          role: "user",
           content: prompt,
         },
       ],
